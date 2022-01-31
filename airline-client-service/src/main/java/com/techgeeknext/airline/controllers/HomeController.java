@@ -27,8 +27,8 @@ public class HomeController {
 	public List <Flight> getFlights(Model model) {
 		// Requesting flights
 		List <Flight> flightList = new ArrayList<Flight>();
-		flightList.add(new Flight("LO2211", "WAW", "GRM" ));
-		flightList.add(new Flight("FS2211", "LHR", "ARN" ));
+		flightList.add(new Flight("LO2211", "WAWA", "GRM" ));
+		flightList.add(new Flight("RA2211", "RADOM", "ARN" ));
 		
 		return flightList;
 	}
