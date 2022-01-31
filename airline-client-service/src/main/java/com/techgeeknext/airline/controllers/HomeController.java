@@ -22,11 +22,12 @@ public class HomeController {
 	public String greet(){
 		return "welcome!";
 	}
+
 	@RequestMapping(value = "/flights", method = RequestMethod.GET)
 	public List <Flight> getFlights(Model model) {
 		// Requesting flights
 		List <Flight> flightList = new ArrayList<Flight>();
-		flightList.add(new Flight("FS2211", "NYC", "GRM" ));
+		flightList.add(new Flight("LO2211", "WAW", "GRM" ));
 		flightList.add(new Flight("FS2211", "LHR", "ARN" ));
 		
 		return flightList;
