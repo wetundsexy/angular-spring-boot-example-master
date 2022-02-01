@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'TestAnguBootWeb'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EE2F821C45C74667A963A1C58ADAED12 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_17B949E0BAE34165BB326FD92166A2F1 }}
           package: '*.jar'
