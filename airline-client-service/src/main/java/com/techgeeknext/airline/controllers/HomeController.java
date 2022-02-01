@@ -20,7 +20,7 @@ public class HomeController {
 	 */
 	@RequestMapping("/")
 	public String greet(){
-		return "welcome!";
+		return "serwus, tu backend!";
 	}
 
 	@RequestMapping(value = "/flights", method = RequestMethod.GET)

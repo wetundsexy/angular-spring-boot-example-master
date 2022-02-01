@@ -5,7 +5,7 @@ import { Observable } from "rxjs";
 
 @Injectable()
 export class FlightsService {
-  
+
   private MYFLIGHTS: Flight[] = [
     {"flightNumber" : "FS1298", "origin": "LAX", "destination" : "LHR"},
     {"flightNumber" : "FS1201", "origin": "LAX", "destination" : "LHR"},
@@ -18,9 +18,9 @@ export class FlightsService {
     return this.MYFLIGHTS;
   }
 
-  // to test with service api 
+  // to test with service api
   public getFlightsData() : Observable<Flight[]>{
-    let url = "http://localhost:8080/flights";
+        let url = "http://localhost:8080/flights";
     return this.http.get<Flight[]>(url);
   }
 }
